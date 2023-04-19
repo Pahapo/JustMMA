@@ -376,13 +376,12 @@ body {
 
   .content__header {
     width: 100%;
-    letter-spacing: 0px;
-    line-height: 40px;
   }
 
   .content__header p {
     font-size: 30px;
     letter-spacing: 0px;
+    line-height: 40px;
   }
 
   .container-small {
