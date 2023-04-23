@@ -1,27 +1,12 @@
-const tabsBtn = document.querySelectorAll(".tabs__nav-btn");
-const tabsItems = document.querySelectorAll(".tabs__item");
+const check = document.querySelector(".subscription__check");
+const form = document.querySelector(".subscription__form");
+const closeTelegram = document.querySelector(".telegram__close");
 
-tabsBtn.forEach(onTabClick);
+check.addEventListener("click", () => {
+  form.style.display = "block";
+});
 
-function onTabClick(item) {
-  item.addEventListener("click", function () {
-    let currentBtn = item;
-    let tabId = currentBtn.getAttribute("data-tab");
-    let currentTab = document.querySelector(tabId);
-
-    if (!currentBtn.classList.contains("active")) {
-      tabsBtn.forEach(function (item) {
-        item.classList.remove("active");
-      });
-
-      tabsItems.forEach(function (item) {
-        item.classList.remove("active");
-      });
-
-      currentBtn.classList.add("active");
-      currentTab.classList.add("active");
-    }
-  });
-}
-
-document.querySelector(".tabs__nav-btn").click();
+closeTelegram.addEventListener("click", () => {
+  form.style.display = "none";
+  console.log("close form");
+});
