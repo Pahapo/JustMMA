@@ -47,6 +47,7 @@ header {
 
 .header__live {
   background: url("../img/live_banner.jpg") no-repeat center top;
+  /* в дальнейшем изменять изображение live_banner.jpg под турнир (оно будет меняться как на 2-ух сайтах, так и в плеере видео)*/
 }
 
 .header__ufc {
@@ -165,6 +166,9 @@ input::placeholder {
 
 .swiper-slide {
   padding-top: 170px;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
 }
 
 .content-center {
@@ -172,22 +176,22 @@ input::placeholder {
 }
 
 .slide__1 {
-  background: url(../img/1_banner.jpg) no-repeat center 25%;
+  background-image: url(../img/1_banner.jpg);
 }
 .slide__2 {
-  background: url(../img/2_banner.jpg) no-repeat center 25%;
+  background-image: url(../img/2_banner.jpg);
 }
 .slide__3 {
-  background: url(../img/3_banner.jpg) no-repeat center 25%;
+  background-image: url(../img/3_banner.jpg);
 }
 .slide__4 {
-  background: url(../img/4_banner.jpg) no-repeat center 25%;
+  background-image: url(../img/4_banner.jpg);
 }
 .slide__5 {
-  background: url(../img/5_banner.jpg) no-repeat center 25%;
+  background-image: url(../img/5_banner.jpg);
 }
 .slide__6 {
-  background: url(../img/6_banner.jpg) no-repeat center 25%;
+  background-image: url(../img/6_banner.jpg);
 }
 
 .slide__content {
@@ -273,13 +277,43 @@ input::placeholder {
 }
 
 .paragraph {
-  margin-top: 30px;
-}
-
-.about {
-  width: 100%;
+  margin-top: 20px;
   font-size: 16px;
   color: #494949;
+}
+
+.about__video {
+  display: flex;
+  align-items: center;
+}
+
+.video__live,
+.video__text {
+  width: 50%;
+}
+
+.video__live video {
+  width: 500px;
+}
+
+.video__header p {
+  font-size: 26px;
+  font-weight: 600;
+  letter-spacing: 3px;
+  color: #1b1b1b;
+  margin-right: auto;
+}
+
+.line-s {
+  width: 75%;
+  height: 3px;
+  background-color: #ec1e1e;
+  border-radius: 0 1px 0 0;
+  line-height: 1px;
+}
+
+.about__text {
+  width: 100%;
 }
 
 .main {
@@ -462,7 +496,7 @@ input::placeholder {
 
 /* 460px - 825px снизу под telegram есть пустое поле */
 
-@media screen and (max-width: 1050px) {
+@media screen and (max-width: 1070px) {
   .name {
     font-size: 80px;
   }
@@ -475,6 +509,23 @@ input::placeholder {
     padding: 0 15px;
     margin-top: 70px;
     line-height: 0.9;
+  }
+
+  .about__video {
+    display: block;
+  }
+
+  .video__live,
+  .video__text {
+    width: 100%;
+  }
+
+  .video__header {
+    margin-top: 40px;
+  }
+
+  .video__live video {
+    width: 100%;
   }
 }
 
@@ -508,7 +559,7 @@ input::placeholder {
   }
 
   .swiper-slide {
-    padding-top: 190px;
+    padding-top: 150px;
   }
 
   .navigation__item {
@@ -678,10 +729,6 @@ input::placeholder {
     letter-spacing: 2px;
   }
 
-  .swiper-slide {
-    padding-top: 160px;
-  }
-
   .content__header p {
     font-size: 45px;
     font-weight: 600;
@@ -750,6 +797,10 @@ input::placeholder {
     font-size: 20px;
     margin: 25px auto;
   }
+
+  /* .swiper-slide {
+    padding-top: 150px;
+} */
 }
 
 @media screen and (max-width: 426px) {
