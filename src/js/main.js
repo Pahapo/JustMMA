@@ -25,6 +25,7 @@ check.addEventListener("click", () => {
     examination.addEventListener("click", () => {
       const name = "@" + document.querySelector(".text__input input").value;
       console.log("name: " + name);
+      form.style.display = "none";
     });
   }
 });
