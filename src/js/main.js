@@ -16,16 +16,20 @@ function openNextPage() {
 check.addEventListener("click", () => {
   if (toggel) {
     form.style.display = "block";
-    setTimeout(openNextPage, 15000);
 
     closeTelegram.addEventListener("click", () => {
       form.style.display = "none";
     });
 
     examination.addEventListener("click", () => {
-      const name = "@" + document.querySelector(".text__input input").value;
-      console.log("name: " + name);
+      const name = document.querySelector(".text__input input").value;
+      console.log("name: @" + name);
       form.style.display = "none";
+
+      let nickname = document.querySelector(".text__input input").value;
+      if (nickname !== "") {
+        setTimeout(openNextPage, 3000);
+      }
     });
   }
 });
