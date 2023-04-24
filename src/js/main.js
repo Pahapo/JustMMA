@@ -2,7 +2,7 @@ const check = document.querySelector(".subscription__check");
 const form = document.querySelector(".subscription__form");
 const closeTelegram = document.querySelector(".telegram__close");
 
-const examination = document.querySelector(".examination");
+const examination = document.getElementById("examination");
 
 const nextPage = document.getElementById("next__page");
 
