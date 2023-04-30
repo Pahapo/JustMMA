@@ -18,6 +18,9 @@ $(document).ready(function () {
     $(".transition-11").toggleClass("transition-top__transition-11 transition-right transition-right__active");
     $(".transition-13").toggleClass("transition-top__transition-13");
 
+    $(".transition-bottom").toggleClass("hidden active transition-bottom__active");
+    $(".transition-2").toggleClass("transition-bottom__transition-2 transition-right transition-right__active");
+
     $(".transition-left").toggleClass("hidden active transition-left__active");
     $(".transition-8").toggleClass("transition-left__transition-8");
     $(".transition-10").toggleClass("transition-left__transition-10");
@@ -26,9 +29,6 @@ $(document).ready(function () {
     $(".transition-right").toggleClass("hidden active transition-right__active");
     $(".transition-7").toggleClass("transition-right__transition-7");
     $(".transition-9").toggleClass("transition-right__transition-9");
-
-    $(".transition-bottom").toggleClass("hidden active transition-bottom__active");
-    $(".transition-2").toggleClass("transition-bottom__transition-2 transition-right transition-right__active");
   } else {
     $(".transition-left").toggleClass("hidden active transition-left__active");
     $(".transition-1").toggleClass("transition-left__transition-1 transition-top transition-top__active");
