@@ -9,6 +9,7 @@
     <!-- заменить -->
     <meta name="theme-color" content="#ffffff" />
     <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="src/css/animation.css" />
     <link rel="stylesheet" href="src/css/style.css" />
 
     <!-- All in One SEO 4.3.4.1 - aioseo.com -->
@@ -41,15 +42,23 @@
   <!-- добавить Яндекс.метрику -->
   <body>
     <header class="header__live">
+      <div class="promo-slider swiper-container">
+        <a href="https://1wusfv.top/" target="_blank" class="swiper-wrapper">
+          <div class="swiper-slide promo-slide__1"></div>
+          <div class="swiper-slide promo-slide__2"></div>
+          <div class="swiper-slide promo-slide__3"></div>
+        </a>
+      </div>
+
       <div class="content-center">
         <div class="slide__content">
-          <div class="slide__name">
+          <div class="slide__name transition-top transition-4 hidden">
             <div class="name-2" style="margin-bottom: 20px">UFC FIGHT NIGHT: HOLLOWAY VS ALLEN</div>
             <div class="name">IT'S FIGHT DAY!</div>
           </div>
-          <a id="next__page" href="#">
+          <a id="next__page" class="subscription__check transition-top transition-5 hidden" href="#">
             <!-- info.html -->
-            <div class="slide__button subscription__check" style="margin-top: 140px">Смотреть</div>
+            <div class="slide__button" style="margin-top: 140px">Смотреть</div>
             <div class="subscription__form">
               <div class="telegram__form">
                 <div class="telegram__block">
@@ -87,6 +96,11 @@
       </div>
     </header>
 
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <script src="src/js/slider.js"></script>
+    <script src="src/js/jquery-1.11.3.min.js"></script>
+    <script src="src/js/jquery-3.4.1.min.js"></script>
+    <script src="src/js/jquery.fancybox.min.js"></script>
     <script src="src/js/main.js"></script>
   </body>
 </html>

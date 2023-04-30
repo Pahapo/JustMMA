@@ -39,7 +39,7 @@
   </head>
   <!-- добавить Яндекс.метрику -->
   <body>
-    <header class="header__live">
+    <header>
       <nav class="navigation__block">
         <div class="navigation__items">
           <div class="navigation__item__img">
@@ -49,29 +49,10 @@
           </div>
           <a href="index.html"><div class="navigation__item" style="color: red">JustMMA</div></a>
           <a href="ufc.html"><div class="navigation__item">UFC</div></a>
-          <a href="prelims.html"><div class="navigation__item">Прелимы</div></a>
+          <a href="#"><div class="navigation__item">Прелимы</div></a>
           <a href="live.html"><div class="navigation__item">В эфире</div></a>
         </div>
       </nav>
-
-      <style>
-        .nav-container .hamburger-lines .line {
-          background: #ffffffcc;
-        }
-        @media screen and (max-width: 825px) {
-          .navigation__block__mobile {
-            display: block;
-            width: 100%;
-            position: fixed;
-            top: 0;
-            left: 0;
-            right: 0;
-            box-shadow: 0 1px 4px rgb(146 161 176 / 15%);
-            background-color: #1b1b1b;
-            z-index: 100;
-          }
-        }
-      </style>
 
       <nav class="navigation__block__mobile">
         <div class="container nav-container">
@@ -83,7 +64,7 @@
           </div>
           <a href="index.html">
             <div class="logo">
-              <h1 style="color: #ffffffcc">JustMMA</h1>
+              <h1 style="color: #383838">JustMMA</h1>
             </div>
           </a>
           <div class="menu-items">
@@ -92,91 +73,42 @@
               <img src="src/img/present.png" alt="подарок" />
             </a>
             <a href="index.html"><li>JustMMA</li></a>
-            <a href="ufc.html" target="_blank"><li>UFC</li></a>
-            <a href="prelims.html" target="_blank"><li>Прелимы</li></a>
+            <a href="ufc.html"><li>UFC</li></a>
+            <a href="mma.html"><li>MMA</li></a>
+            <a href="live.html" style="color: red"><li>В эфире</li></a>
           </div>
         </div>
       </nav>
-
-      <div class="container-small">
-        <div class="content__header transition-top transition-4 hidden">
-          <p>
-            КАРД ТУРНИРА UFC ВЕГАС 71:<br />
-            ПАВЛОВИЧ <span class="style__vs">VS</span> БЛЭЙДС
-          </p>
-        </div>
-        <div class="header__text transition-top transition-5 hidden">
-          <p>Сергей Павлович против Кёртиса Блэйдса и другие поединки предстоящего турнира</p>
-        </div>
-      </div>
     </header>
+
+    <style>
+      .article img {
+        margin: 0 30px 15px 0;
+      }
+      header {
+        height: 160px;
+      }
+      .article img {
+        float: left;
+        width: 500px;
+      }
+      @media screen and (max-width: 825px) {
+        header {
+          height: 35px;
+        }
+        .article img {
+          width: 100%;
+        }
+      }
+    </style>
 
     <main class="main">
       <div class="container">
         <div class="article">
-          <div class="video__about transition-top transition-left transition-6 hidden">
-            <div class="video__header">
-              <p>UFC ВЕГАС 71: ПАВЛОВИЧ VS БЛЭЙДС</p>
-            </div>
-            <div class="line-s"></div>
-            <div class="video__text">
-              <p>
-                Вночь с 22 на 23 апреля в UFC Apex (Лас-Вегас) состоится турнир UFC Вегас 71. В главном бою вечера третий номер рейтинга тяжёлой
-                весовой категории Сергей Павлович встретится с четвёртым в списке лучших бойцов дивизиона Кёртисом Блэйдсом. Предлагаем вашему
-                вниманию полный кард предстоящего турнира.
-              </p>
-            </div>
-          </div>
-          <div class="video__live transition-right transition-7 hidden">
-            <video poster="src/img/live_banner.jpg" preload="metadata" controls="controls">
-              <source src="blob:https://vk.com/7d6ed589-15b7-4b1c-b8b7-306837f98696" type="video/mp4" />
-              Элемент video не поддерживается вашим браузером.
-            </video>
-            <!-- вставить сюда "код встраивания" прямого эфира из вк или сайта -->
-          </div>
-          <div class="video__about transition-left transition-8 hidden">
-            <div class="video__text">
-              <h1>Главный кард:</h1>
-              <h2>Главный бой, тяжёлый вес:&nbsp;</h2>
-              <ul>
-                <li>
-                  <strong>Сергей Павлович&nbsp;</strong>(#3&nbsp;рейтинга | 17-1 | 14&nbsp;КО/ТКО)&nbsp;vs&nbsp;<strong>Кёртис Блэйдс&nbsp;</strong
-                  >(#4&nbsp;рейтинга | 17-3, 1 NC&nbsp;| 12 КО/ТКО);
-                </li>
-              </ul>
-              <p>
-                Средний вес:&nbsp;<strong>Брэд Таварес&nbsp;</strong>(19-7 | 5 KO/TKO, 2 SUB) vs&nbsp;<strong>Бруно Силва&nbsp;</strong>(22-8 | 19
-                KO/TKO);
-              </p>
-              <p>
-                Лёгкий вес:&nbsp;<strong>Бобби Грин&nbsp;</strong>(29-14-1 | 10 КО/ТКО, 8 SUB)&nbsp;vs&nbsp;<strong>Джэрад Гордон</strong>&nbsp;(19-6
-                | 6 KO/TKO, 2 SUB);
-              </p>
-              <p>
-                Женский наилегчайший вес:&nbsp;<strong>Ясмин Лусиндо&nbsp;</strong>(13-5 | 8 KO/TKO, 2 SUB) vs&nbsp;<strong>Броган Уолкер</strong
-                >&nbsp;(7-3 | 1 SUB);
-              </p>
-              <p>
-                Полусредний вес:&nbsp;<strong>Джеремая Уэллс&nbsp;</strong>(11-2-1 | 5 KO/TKO, 4 SUB) vs&nbsp;<strong
-                  >Мэттью Семелсбергер&nbsp;</strong
-                >(11-4 | 6 KO/TKO, 1 SUB).
-              </p>
-            </div>
-          </div>
-
-          <div style="clear: left"></div>
-          <div class="flex-content">
-            <a href="https://1wusfv.top/" class="transition-right transition-9 hidden">
-              <img src="src/img/main-card.jpg" alt="Главный кадр" />
-            </a>
-            <div class="break"></div>
-            <!-- разрыв -->
-            <a href="https://1wusfv.top/" class="promo__img transition-left transition-10 hidden">
-              <img src="src/img/main-card.jpg" alt="Сделать ставку" />
-            </a>
-            <!-- заменить src -->
-          </div>
-          <div class="main-card__text transition-top transition-left transition-11 hidden">
+          <a href="https://1wusfv.top/" class="transition-top transition-left transition-1 hidden">
+            <img src="src/img/main-card.jpg" alt="Главный кадр" />
+          </a>
+          <div class="main-card__text transition-bottom transition-right transition-2 hidden">
             <div class="main-card__header">
               <p>Прелимы</p>
             </div>
@@ -217,11 +149,7 @@
 
           <div style="clear: left"></div>
 
-          <a href="https://1wusfv.top/" class="promo__img__mobile transition-right transition-12 hidden">
-            <img src="src/img/main-card.jpg" alt="Сделать ставку" />
-          </a>
-
-          <div class="support transition-top transition-13 hidden">
+          <div class="support transition-top transition-5 hidden">
             <p>
               По всем возникающим вопросам вы можете обратиться в службу поддержки
               <a href="mailto:justmma@mail.ru?subject=Вопрос пользователя сайта JUSTMMA" class="a">support@justmma</a>
