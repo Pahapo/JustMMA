@@ -10,3 +10,11 @@ let swiper = new Swiper(".image-slider", {
     draggable: true,
   },
 });
+
+let swiper2 = new Swiper(".promo-slider", {
+  spaceBetween: 0,
+  loop: true,
+  autoplay: {
+    delay: 5000,
+  },
+});

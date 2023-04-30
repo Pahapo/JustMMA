@@ -1,0 +1,119 @@
+.active {
+  position: relative;
+  visibility: visible;
+}
+
+.hidden {
+  position: absolute;
+  visibility: hidden;
+}
+
+/* top */
+
+.transition-top {
+  top: 600px;
+}
+
+.transition-top__active {
+  top: 0;
+}
+
+/* right */
+
+.transition-right {
+  right: 600px;
+}
+
+.transition-right__active {
+  right: 0;
+}
+
+/* bottom */
+
+.transition-bottom {
+  bottom: 600px;
+}
+
+.transition-bottom__active {
+  bottom: 0;
+}
+
+/* left */
+
+.transition-left {
+  left: 600px;
+}
+
+.transition-left__active {
+  left: 0;
+}
+
+/* ather */
+
+.transition-top__transition-1 {
+  transition: top 1s;
+}
+
+.transition-left__transition-1 {
+  transition: left 1s;
+}
+
+.transition-bottom__transition-2 {
+  transition: bottom 1s;
+}
+
+.transition-right__transition-2 {
+  transition: right 1s;
+}
+
+.transition-top__transition-3 {
+  transition: top 1s;
+}
+
+.transition-top__transition-4 {
+  transition: top 1s;
+}
+
+.transition-top__transition-5 {
+  transition: top 1.3s;
+}
+
+.transition-top__transition-6 {
+  transition: top 2s;
+}
+
+.transition-left__transition-6 {
+  transition: left 2s;
+}
+
+.transition-right__transition-7 {
+  transition: right 2.7s;
+}
+
+.transition-left__transition-8 {
+  transition: left 2.7s;
+}
+
+.transition-right__transition-9 {
+  transition: right 3.4s;
+}
+
+.transition-left__transition-10 {
+  transition: left 3.4s;
+}
+
+.transition-top__transition-11 {
+  transition: top 4.1s;
+}
+
+.transition-left__transition-11 {
+  transition: left 4.1s;
+}
+
+.transition-right__transition-12 {
+  transition: right 4.8s;
+}
+
+.transition-top__transition-13 {
+  transition: top 4.8s;
+}
