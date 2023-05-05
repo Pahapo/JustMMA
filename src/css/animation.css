@@ -66,8 +66,9 @@
   transition: right 1s;
 }
 
+/* for button */
 .transition-top__transition-3 {
-  transition: top 1s;
+  transition: top 2s;
 }
 
 .transition-top__transition-4 {

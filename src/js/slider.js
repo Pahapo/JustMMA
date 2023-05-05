@@ -15,6 +15,6 @@ let swiper2 = new Swiper(".promo-slider", {
   spaceBetween: 0,
   loop: true,
   autoplay: {
-    delay: 5000,
+    delay: 3000,
   },
 });

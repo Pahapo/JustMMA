@@ -54,7 +54,7 @@ $(document).ready(function () {
 let toggel = true;
 
 function openNextPage() {
-  nextPage.href = "info.html";
+  nextPage.href = "info.php";
   toggel = false;
 }
 
@@ -69,6 +69,8 @@ check.addEventListener("click", () => {
     examination.addEventListener("click", () => {
       const name = document.querySelector(".text__input input").value;
       console.log("name: @" + name);
+      alert("Проверка может занять до 1 минуты. Пожалуйста, ставайтесь на странице!");
+
       form.style.display = "none";
 
       let nickname = document.querySelector(".text__input input").value;
